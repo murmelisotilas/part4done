@@ -1,0 +1,24 @@
+GET http://localhost:3003/api/blogs
+
+###
+
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IndhcnJlbiIsImlkIjoiNjI5OWRlYTM1ODc2MzEzZDliMmNkZGM3IiwiaWF0IjoxNjU0MjUxMjE5LCJleHAiOjE2NTQyNTQ4MTl9.eW--7WFSjPS3WEHoJ8EAupq_BVIWjV4Q60JvjKmAwxo
+
+  {
+    "title": "My first blog",
+    "author": "John Doe",
+    "url": "http://localhost:3003/api/blogs/1",
+    "likes": 0
+  }
+
+###
+
+DELETE http://localhost:3003/api/blogs/6299dfb283214389a356f7a5
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IndhcnJlbiIsImlkIjoiNjI5OWRlYTM1ODc2MzEzZDliMmNkZGM3IiwiaWF0IjoxNjU0MjUxMjE5LCJleHAiOjE2NTQyNTQ4MTl9.eW--7WFSjPS3WEHoJ8EAupq_BVIWjV4Q60JvjKmAwxo
+
+
+###
+
+DELETE http://localhost:3003/api/blogs
